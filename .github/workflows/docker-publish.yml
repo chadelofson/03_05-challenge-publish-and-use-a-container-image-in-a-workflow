@@ -6,6 +6,7 @@ name: Docker
 # documentation.
 
 on:
+  workflow-dispatch:
   push:
     branches: [ "main" ]
     # Publish semver tags as releases.
@@ -102,4 +103,4 @@ jobs:
     steps:
       - name: Set up Docker Buildx
         run: |
-          docker run ghcr.io/chadelofson/03_05-challenge-publish-and-use-a-container-image-in-a-workflow
+          docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
