@@ -113,7 +113,7 @@ jobs:
         name: Download artifact
         uses: actions/download-artifact@v3
         with:
-          name: myimage
+          name: myimage.tar
           path: /tmp
       -
         name: Load image
