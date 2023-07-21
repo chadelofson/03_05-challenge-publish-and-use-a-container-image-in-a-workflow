@@ -1,8 +1,8 @@
 BUILD_NAME       ?= simple
 BUILD_TAG        ?= $(shell git rev-parse --short HEAD)
 
-GITHUB_USER_NAME ?= PUT_YOUR_USER_NAME_HERE
-GITHUB_REPO_NAME ?= PUT_YOUR_REPO_NAME_HERE
+GITHUB_USER_NAME ?= chadelofson
+GITHUB_REPO_NAME ?= 03_05-challenge-publish-and-use-a-container-image-in-a-workflow
 GITHUB_TAG       ?= main
 
 build:
