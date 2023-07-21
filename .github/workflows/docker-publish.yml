@@ -103,4 +103,4 @@ jobs:
     steps:
       - name: Set up Docker Buildx
         run: |
-          docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
+          docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main | grep container && echo "TEST PASSED"
